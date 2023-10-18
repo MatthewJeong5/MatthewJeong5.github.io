@@ -11,19 +11,25 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Assignment 2 Tudor History.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Assignment 2 Tudor History" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="65185EFA-1E90-4E11-BDE3-60B3CE00B08F" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="You are King Henry the Vlll" tags="" position="75,0" size="100,100">[(text-colour:yellow)[(text-style:&quot;italic&quot;,&quot;double-underline&quot;,&quot;emboss&quot;)[//The year is 1509. You are King Henry the VIII and have ascended to the throne after the passing of your father, King Henry the VII. //]]]
 
+(set:$treasury=100)
+(if:$treasury &gt; 0)[[Ignore]]
+[[Do you reject the crown and refuse to sit on the thrown?]] 
 [[Do you take the crown and sit on the thrown?]] 
-[[Do you reject the crown and refuse to sit on the thrown?]]
 
 (after:2s)[Will you take the crown...]
 (after:4s)[Or live the rest of your days remembered by none...]
 
-&lt;a href=&quot;https://imgflip.com/i/81xuej&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xuej.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;
+&lt;a href=&quot;https://imgflip.com/i/81xuej&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xuej.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;]
+
 
 </tw-passagedata><tw-passagedata pid="2" name="Do you take the crown and sit on the thrown?" tags="" position="200,0" size="100,100">(text-colour:yellow)[(text-style:&quot;italic&quot;,&quot;wavy-underline&quot;)[//Great, you are now officially the next king of England starting the beginning of the Tudor dynasty. The year is now 1525. You have married Queen Catherine of Aragon. Do you stay in the marriage or pursue to annul the marriage? //]]
 
 [[Stay in the marriage.]]
 
 [[Annul the marriage]]
+
+(set:$treasury=100)
+(if:$treasury &gt; 0)[[Ignore]]
 
 (after:2s)[Queen Catherine of Aragon (1485-1536) ]
 
@@ -32,7 +38,7 @@ First wife of King Henry VIII and mother of Queen Mary I.]
 
 
 
-</tw-passagedata><tw-passagedata pid="3" name="Do you reject the crown and refuse to sit on the thrown?" tags="" position="100,125" size="100,100">You fail to become the next king of England and your story comes to an end. </tw-passagedata><tw-passagedata pid="4" name="Stay in the marriage." tags="" position="350,125" size="100,100">Your decision to stay in the marriage with the Queen has left you to stay in the Catholic Church of Rome. Therefore, the pope continues to stay in power and England continues to follow Catholic doctrines and traditions under the pope. </tw-passagedata><tw-passagedata pid="5" name="Annul the marriage" tags="" position="350,0" size="100,100">Your decision to annul from this marriage, led you to break away from the Roman Catholic Church, resulting in the creation of the Church of England. The English parliament passes the Act of Supremacy recognizing you as the supreme head of the church. Now that you are the head of the Church of England, what do you do to the monasteries throughout England? 
+</tw-passagedata><tw-passagedata pid="3" name="Do you reject the crown and refuse to sit on the thrown?" tags="" position="50,125" size="100,100">You fail to become the next king of England and your story comes to an end. </tw-passagedata><tw-passagedata pid="4" name="Stay in the marriage." tags="" position="350,125" size="100,100">Your decision to stay in the marriage with the Queen has left you to stay in the Catholic Church of Rome. Therefore, the pope continues to stay in power and England continues to follow Catholic doctrines and traditions under the pope. </tw-passagedata><tw-passagedata pid="5" name="Annul the marriage" tags="" position="350,0" size="100,100">Your decision to annul from this marriage, led you to break away from the Roman Catholic Church, resulting in the creation of the Church of England. The English parliament passes the Act of Supremacy recognizing you as the supreme head of the church. Now that you are the head of the Church of England, what do you do to the monasteries throughout England? 
 
 [[Preserve the monasteries.]]
 
@@ -40,11 +46,12 @@ First wife of King Henry VIII and mother of Queen Mary I.]
 
 (after:3s)[The Church of England&#39;s origins can be traced back to the 16th century. ]
 
-(after:5s)[In the early 1530s, King Henry VIII of England sought an annulment of his marriage to Catherine of Aragon. When the Pope refused to grant the annulment, Henry VIII broke away from the authority of the Roman Catholic Church. In 1534, the Act of Supremacy declared the King of England as the supreme head of the Church of England, marking the official separation from the Roman Catholic Church.]</tw-passagedata><tw-passagedata pid="6" name="Preserve the monasteries." tags="" position="550,125" size="100,100">You decide to preserve the monasteries, there are no economic growth and the Catholic Church manages to maintain control and influence over religious matters in England. </tw-passagedata><tw-passagedata pid="7" name="Dissolve the monasteries." tags="" position="575,0" size="100,100">(text-colour:#f00)[(text-style:&quot;bold&quot;,&quot;outline&quot;)[&#39;&#39;You have decided as the new head to dissolve all the monasteries and reaped its wealth and managed to suppress political opposition. The year is now 1536 and you have received reports of uprisings in Northern England led by Robert Aske. They are very discontent and rebelling against your rulings and policies. What do you do?&#39;&#39;]]  
+(after:5s)[In the early 1530s, King Henry VIII of England sought an annulment of his marriage to Catherine of Aragon. When the Pope refused to grant the annulment, Henry VIII broke away from the authority of the Roman Catholic Church. In 1534, the Act of Supremacy declared the King of England as the supreme head of the Church of England, marking the official separation from the Roman Catholic Church.]</tw-passagedata><tw-passagedata pid="6" name="Preserve the monasteries." tags="" position="500,125" size="100,100">You decide to preserve the monasteries, there are no economic growth and the Catholic Church manages to maintain control and influence over religious matters in England. </tw-passagedata><tw-passagedata pid="7" name="Dissolve the monasteries." tags="" position="575,0" size="100,100">(text-colour:#f00)[(text-style:&quot;bold&quot;,&quot;outline&quot;)[&#39;&#39;You have decided as the new head to dissolve all the monasteries and reaped its wealth and managed to suppress political opposition. The year is now 1536 and you have received reports of uprisings in Northern England led by Robert Aske. They are very discontent and rebelling against your rulings and policies. What do you do?&#39;&#39;]]  
 
-[[Do nothing of the rebellion.]]
-
+(set:$treasury=100)
+(if:$treasury &gt; 0)[[Ignore]]
 [[Quell the rebellion by force.]] 
+[[Do nothing of the rebellion.]] 
 
 (after:2s)[Robert Aske (1500-1537) is an English Lawyer who has become a leader of the Pilgrimage of Grace uprising...]
 
@@ -52,13 +59,18 @@ First wife of King Henry VIII and mother of Queen Mary I.]
 
 (after:6s)[Or kneel to his rebellion... ]
 
-&lt;a href=&quot;https://imgflip.com/i/81xuc1&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xuc1.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="8" name="Do nothing of the rebellion." tags="" position="775,0" size="100,100">You have chosen to do nothing of the rebellion. As a consequence, more rebellions began to spread throughout Europe, and your authority is challenged. The succession of the rebellion has slowed the progress of the English Reformation. </tw-passagedata><tw-passagedata pid="9" name="Quell the rebellion by force." tags="" position="750,125" size="100,100">You have decided to quell the rebellion by force. You send out your armies to engage with the rebels resulting in a victory. You manage to capture Robert Aske and execute him for his involvement in the uprising. The year is now 1533, you decide to marry a new wife in hopes of having a son. Who do you choose? 
+&lt;a href=&quot;https://imgflip.com/i/81xuc1&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xuc1.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;
+
+</tw-passagedata><tw-passagedata pid="8" name="Do nothing of the rebellion." tags="" position="675,50" size="100,100">You have chosen to do nothing of the rebellion. As a consequence, more rebellions began to spread throughout Europe, and your authority is challenged. The succession of the rebellion has slowed the progress of the English Reformation. </tw-passagedata><tw-passagedata pid="9" name="Quell the rebellion by force." tags="" position="775,25" size="100,100">You have decided to quell the rebellion by force. You send out your armies to engage with the rebels resulting in a victory. You manage to capture Robert Aske and execute him for his involvement in the uprising. The year is now 1533, you decide to marry a new wife in hopes of having a son. Who do you choose? 
+
+(set:$treasury=100)
+(if:$treasury &gt; 0)[[Ignore]]
 
 [[Anne Boleyn.]]
 
 [[Your personal servant.]]
 
-&lt;a href=&quot;https://imgflip.com/i/81xtxt&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xtxt.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="10" name="Anne Boleyn." tags="" position="900,175" size="100,100">Your new wife, Anne Boleyn fails to deliver a son like you wanted and instead brings a daughter. During the marriage, you also secretly fall in love with Jane Seymour. What do you do? 
+&lt;a href=&quot;https://imgflip.com/i/81xtxt&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xtxt.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="10" name="Anne Boleyn." tags="" position="900,100" size="100,100">Your new wife, Anne Boleyn fails to deliver a son like you wanted and instead brings a daughter. During the marriage, you also secretly fall in love with Jane Seymour. What do you do? 
 
 [[Keep Anne Boleyn.]] 
 
@@ -70,15 +82,17 @@ First wife of King Henry VIII and mother of Queen Mary I.]
 
 &lt;a href=&quot;https://imgflip.com/i/81xu44&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xu44.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;
 
-</tw-passagedata><tw-passagedata pid="11" name="Your personal servant." tags="" position="900,50" size="100,100">You decide to marry your personal servant. She fails to bring a son to you and therefore your rule ends with no heir to take over. </tw-passagedata><tw-passagedata pid="12" name="Keep Anne Boleyn." tags="" position="1025,250" size="100,100">You decide to keep Anne Boleyn as the queen. She later finds out about the affair between you and Jane and therefore kicks out Jane Seymour. Your rule ends with no male heir to pass onto. </tw-passagedata><tw-passagedata pid="13" name="Execute her." tags="" position="1025,125" size="100,100">Since Anne fails to bring a son, you decide to execute her. After her execution, you decide to get married to Jane Seymour and she becomes your third wife. She bears you a son to pass the crown onto, but passes away from childbirth less than two weeks later. The year is 1536, you as the king decide whether to integrate Wales into England. Wales is currently it&#39;s own independant nation. What do you choose? 
+</tw-passagedata><tw-passagedata pid="11" name="Your personal servant." tags="" position="925,0" size="100,100">You decide to marry your personal servant. She fails to bring a son to you and therefore your rule ends with no heir to take over. </tw-passagedata><tw-passagedata pid="12" name="Keep Anne Boleyn." tags="" position="1050,250" size="100,100">You decide to keep Anne Boleyn as the queen. She later finds out about the affair between you and Jane and therefore kicks out Jane Seymour. Your rule ends with no male heir to pass onto. </tw-passagedata><tw-passagedata pid="13" name="Execute her." tags="" position="1050,100" size="100,100">Since Anne fails to bring a son, you decide to execute her. After her execution, you decide to get married to Jane Seymour and she becomes your third wife. She bears you a son to pass the crown onto, but passes away from childbirth less than two weeks later. The year is 1536, you as the king decide whether to integrate Wales into England. Wales is currently it&#39;s own independant nation. What do you choose? 
 
 [[Don&#39;t integrate Wales into England.]]
 
 [[Integrate Wales into England.]]
 
+(set:$treasury=100)
+(if:$treasury &gt; 0)[[Ignore]]
 
-
-&lt;a href=&quot;https://imgflip.com/i/81xuib&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xuib.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="14" name="Don&#39;t integrate Wales into England." tags="" position="1225,150" size="100,100">(text-colour:red)[&#39;&#39;You decide not to integrate Wales into England. Wales continues to be it&#39;s own separate country with it&#39;s own culture, language, religion, and political system. &#39;&#39;]</tw-passagedata><tw-passagedata pid="15" name="Integrate Wales into England." tags="" position="1200,275" size="100,100">//(text-colour:green)[&#39;&#39;You decide to officially integrate Wales into England. The Acts of Union with Wales, which are a series of laws enacted by the parliament helped to fully integrate Wales into England. Legal and administrative unity is formed between the two nations. You continue to rule till the end of your reign. &#39;&#39;]//</tw-passagedata></tw-storydata>
+&lt;a href=&quot;https://imgflip.com/i/81xuib&quot;&gt;&lt;img src=&quot;https://i.imgflip.com/81xuib.jpg&quot; title=&quot;made at imgflip.com&quot;/&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="14" name="Don&#39;t integrate Wales into England." tags="" position="1225,125" size="100,100">(text-colour:red)[&#39;&#39;You decide not to integrate Wales into England. Wales continues to be it&#39;s own separate country with it&#39;s own culture, language, religion, and political system. &#39;&#39;]</tw-passagedata><tw-passagedata pid="15" name="Integrate Wales into England." tags="" position="1225,250" size="100,100">//(text-colour:green)[&#39;&#39;You decide to officially integrate Wales into England. The Acts of Union with Wales, which are a series of laws enacted by the parliament helped to fully integrate Wales into England. Legal and administrative unity is formed between the two nations. You continue to rule till the end of your reign. &#39;&#39;]//</tw-passagedata><tw-passagedata pid="16" name="Do nothing of the rebellion" tags="" position="600,175" size="100,100">(set:$treasury=0)
+(if:$treasury is 0)[You have chosen to do nothing of the rebellion. As a consequence, more rebellions began to spread throughout Europe, and your authority is challenged. The succession of the rebellion has slowed the progress of the English Reformation. ]</tw-passagedata><tw-passagedata pid="17" name="Ignore" tags="" position="600,475" size="100,100">//(text-colour:red)[You have decided to ignore all the options. Therefore, your time as ruler comes to an aburpt end...]//</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
